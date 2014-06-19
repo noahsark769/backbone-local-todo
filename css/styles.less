@@ -3,4 +3,68 @@
 	display: block;
 	width: @main-width;
 	margin: 0 auto;
+	color: white;
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+
+	@padding-sides: 10px;
+	ul {
+		display: block;
+		width: @main-width;
+		margin-top: 50px;
+
+		li {
+			display: block;
+			width: 100%;
+			list-style-type: none;
+
+			.item-name, .destroy {
+				display: inline-block;
+				padding: 10px @padding-sides;
+			}
+			.item-name {
+				text-align: left;
+				width: (@main-width - 4 * @padding-sides) * .7;
+				background-color: #D1C8A8;
+			}
+			.destroy {
+				width: (@main-width - 4 * @padding-sides) * .3;
+				background-color: #D6635A;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.add {
+		display: block;
+		width: 100%;
+
+		input, .add-button {
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			vertical-align: top;
+			padding: 10px @padding-sides;
+			box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+		}
+
+		input {
+			border: none;
+			// width: (@main-width) * .7; // hardcode for padding, lazy
+			width: (@main-width - 4 * @padding-sides) * .7;
+			background-color: #492A32;
+			margin: 0;
+			// padding: 0;
+			color: white;
+		}
+		.add-button {
+			border: none;
+			background-color: #68A28A;
+			// width: (@main-width) * .3;
+			width: (@main-width - 4 * @padding-sides) * .3;
+			cursor: pointer;
+		}
+	}
 }

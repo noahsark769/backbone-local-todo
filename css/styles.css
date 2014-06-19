@@ -2,4 +2,60 @@
   display: block;
   width: 400px;
   margin: 0 auto;
+  color: white;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+.container ul {
+  display: block;
+  width: 400px;
+  margin-top: 50px;
+}
+.container ul li {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+}
+.container ul li .item-name,
+.container ul li .destroy {
+  display: inline-block;
+  padding: 10px 10px;
+}
+.container ul li .item-name {
+  text-align: left;
+  width: 251.99999999999997px;
+  background-color: #D1C8A8;
+}
+.container ul li .destroy {
+  width: 108px;
+  background-color: #D6635A;
+  cursor: pointer;
+}
+.container .add {
+  display: block;
+  width: 100%;
+}
+.container .add input,
+.container .add .add-button {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  vertical-align: top;
+  padding: 10px 10px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.container .add input {
+  border: none;
+  width: 251.99999999999997px;
+  background-color: #492A32;
+  margin: 0;
+  color: white;
+}
+.container .add .add-button {
+  border: none;
+  background-color: #68A28A;
+  width: 108px;
+  cursor: pointer;
 }
